@@ -34,7 +34,6 @@ const AssignmentRoutes = () => {
               path="/assignment-3/Ques-3/about"
               element={<AboutQuesThree />}
             />
-          
 
             <Route path="/assignment-3/Ques-4" element={<HomeQuesFour />} />
             <Route
