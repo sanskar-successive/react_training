@@ -16,6 +16,11 @@ import PageNotFoundQuesFour from "../Assignments/Assignment-3/Ques4/Pages/PageNo
 import HomeQuesThree from "../Assignments/Assignment-3/Ques3/Pages/HomeQuesThree";
 // import PageNotFoundQuesThree from "../Assignments/Assignment-3/Ques3/Pages/PageNotFoundQuesThree";
 import { AuthProvider } from "../Assignments/Assignment-3/Ques4/Authcontext";
+import ImportAssignmentFour from "../AssignmentImports/ImportAssignmentFour";
+import HomeQuesNine from "../Assignments/Assignment-4/Ques9/Pages/HomeQuesNine";
+import AboutQuesNine from "../Assignments/Assignment-4/Ques9/Pages/AboutQuesNine";
+import DashboardQuesNine from "../Assignments/Assignment-4/Ques9/Pages/DashboardQuesNine";
+import ProfileQuesNine from "../Assignments/Assignment-4/Ques9/Pages/ProfileQuesNine";
 
 const AssignmentRoutes = () => {
   return (
@@ -34,7 +39,6 @@ const AssignmentRoutes = () => {
               path="/assignment-3/Ques-3/about"
               element={<AboutQuesThree />}
             />
-          
 
             <Route path="/assignment-3/Ques-4" element={<HomeQuesFour />} />
             <Route
@@ -64,6 +68,12 @@ const AssignmentRoutes = () => {
               element={<ProductDetail />}
             />
             <Route path="*" element={<PageNotFoundQuesFour />} />
+
+            <Route path="/assignment-4" element={<ImportAssignmentFour />} />
+            <Route path="/assignment-4/Ques-9" element={<HomeQuesNine />} />
+            <Route path="/assignment-4/Ques-9/about" element={<AboutQuesNine />} />
+            <Route path="/assignment-4/Ques-9/dashboard" element={<DashboardQuesNine />} />
+            <Route path="/assignment-4/Ques-9/profile" element={<ProfileQuesNine />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
