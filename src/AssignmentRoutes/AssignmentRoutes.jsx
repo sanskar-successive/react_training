@@ -21,6 +21,7 @@ import HomeQuesNine from "../Assignments/Assignment-4/Ques9/Pages/HomeQuesNine";
 import AboutQuesNine from "../Assignments/Assignment-4/Ques9/Pages/AboutQuesNine";
 import DashboardQuesNine from "../Assignments/Assignment-4/Ques9/Pages/DashboardQuesNine";
 import ProfileQuesNine from "../Assignments/Assignment-4/Ques9/Pages/ProfileQuesNine";
+import ImportAssignmentFive from "../AssignmentImports/ImportAssignmentFive";
 
 const AssignmentRoutes = () => {
   return (
@@ -74,6 +75,9 @@ const AssignmentRoutes = () => {
             <Route path="/assignment-4/Ques-9/about" element={<AboutQuesNine />} />
             <Route path="/assignment-4/Ques-9/dashboard" element={<DashboardQuesNine />} />
             <Route path="/assignment-4/Ques-9/profile" element={<ProfileQuesNine />} />
+
+
+            <Route path="/assignment-5" element={<ImportAssignmentFive/>}/>
           </Routes>
         </BrowserRouter>
       </AuthProvider>
