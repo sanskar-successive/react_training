@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import DataFetcher from "../Assignments/Assignment-5/Ques1/DataFetcher";
 import LoginForm from "../Assignments/Assignment-5/Ques14/Pages/HomeQuesFourTeen";
 import FetchAndDisplayData from "../Assignments/Assignment-5/Ques16/FetchAndDisplayData";
@@ -19,6 +20,9 @@ const ImportAssignmentFive = ()=>{
 
             
             <FetchAndDisplayData/>
+            <br/>
+
+            <Link to='/assignment-5/Ques-14/'>Ques 14</Link>
 
             {/* <LoginForm/> */}
         </>

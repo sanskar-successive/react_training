@@ -4,7 +4,7 @@ const LoginQuesFourTeen = ()=>{
     return(
         <>
             <h3>Login page</h3>
-            <Link to='/'>Go to home</Link>
+            <Link to='/assignment-5/Ques-14/'>Go to home</Link>
         </>
     )
 }
