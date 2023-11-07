@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { HomeQuesOne, WrapperPage } from "../Assignments/Assignment-3";
 
-
-
 const AssignmentThree = () => {
   return (
     <>
@@ -22,5 +20,4 @@ const AssignmentThree = () => {
     </>
   );
 };
-
 export default AssignmentThree;

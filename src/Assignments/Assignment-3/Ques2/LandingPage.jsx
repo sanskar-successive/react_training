@@ -8,7 +8,7 @@ const LandingPage = () => {
   const { theme } = useContext(PreferenceContext);
   return (
     <>
-      <div className={`${ theme==='light' ? 'light' : 'dark'}`}>
+      <div className={`${ theme==='LIGHT' ? 'LIGHT' : 'DARK'}`}>
         <AuthConsumer />
         <PreferenceConsumer />
       </div>

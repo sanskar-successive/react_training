@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../Authcontext";
 
 const LoginPage = () => {
-  
   const adminUser = { username: "Sanskar", password: "12345" };
   const navigate = useNavigate();
   const [user, setUser] = useState({ username: "", password: "" });
@@ -24,7 +23,7 @@ const LoginPage = () => {
       setComment(user.username);
       navigate("/assignment-3/Ques-4/");
     } else {
-      if (user.username === "" || user.password === "")
+      if (!user.username || !user.password)
         setComment("Please fill the required fields");
       else setComment("you are not authenticated");
     }

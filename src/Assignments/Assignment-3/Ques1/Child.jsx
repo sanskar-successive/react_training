@@ -7,11 +7,10 @@ import { useContext, useState } from "react";
 import { AuthContext } from "./Parent";
 
 const Child = () => {
-
   const { isLoggedIn, handleLogin, handleLogout } = useContext(AuthContext);
   const [user, setUser] = useState("");
   const handleLoginButton = () => {
-    if(user.length>0) handleLogin();
+    if(user.length) handleLogin();
   };
   const handleLogoutButton = () => {
     handleLogout();
