@@ -1,19 +1,15 @@
-import withDataFetching from "./withDataFetching"
+import withDataFetching from "./withDataFetching";
 
-const FetchAndDisplayData = (props)=>{
-    return(
-        <>
-            <h3>Fetch and display data using HOC</h3>
-            <button onClick={props.handleDataFetch}>Fetch Data HOC</button>
-            {/* {props.data.map((item)=>{
-                return(
-                    <li>
-                        {item.title}
-                    </li>
-                )
-            })} */}
-            {props.data}
-        </>
-    )
-}
+const FetchAndDisplayData = ({ data, handleDataFetch }) => {
+    console.log(data);
+  return (
+    <>
+      <h3>Fetch and display data using HOC</h3>
+      <button>Fetch Data using HOC</button>
+      {/* {data.map((item) => {
+        return (<li>{item.title}</li>);
+      })} */}
+    </>
+  );
+};
 export default withDataFetching(FetchAndDisplayData);
