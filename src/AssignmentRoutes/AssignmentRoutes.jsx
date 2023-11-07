@@ -22,6 +22,10 @@ import AboutQuesNine from "../Assignments/Assignment-4/Ques9/Pages/AboutQuesNine
 import DashboardQuesNine from "../Assignments/Assignment-4/Ques9/Pages/DashboardQuesNine";
 import ProfileQuesNine from "../Assignments/Assignment-4/Ques9/Pages/ProfileQuesNine";
 import ImportAssignmentFive from "../AssignmentImports/ImportAssignmentFive";
+import HomeQuesFourTeen from "../Assignments/Assignment-5/Ques14/Pages/HomeQuesFourTeen";
+import AboutQuesFourTeen from "../Assignments/Assignment-5/Ques14/Pages/AboutQuesFourTeen";
+import DashboardQuesFourTeen from "../Assignments/Assignment-5/Ques14/Pages/DashboardQuesFourTeen";
+import LoginQuesFourTeen from "../Assignments/Assignment-5/Ques14/Pages/LoginQuesFourTeen";
 
 const AssignmentRoutes = () => {
   return (
@@ -72,12 +76,36 @@ const AssignmentRoutes = () => {
 
             <Route path="/assignment-4" element={<ImportAssignmentFour />} />
             <Route path="/assignment-4/Ques-9" element={<HomeQuesNine />} />
-            <Route path="/assignment-4/Ques-9/about" element={<AboutQuesNine />} />
-            <Route path="/assignment-4/Ques-9/dashboard" element={<DashboardQuesNine />} />
-            <Route path="/assignment-4/Ques-9/profile" element={<ProfileQuesNine />} />
+            <Route
+              path="/assignment-4/Ques-9/about"
+              element={<AboutQuesNine />}
+            />
+            <Route
+              path="/assignment-4/Ques-9/dashboard"
+              element={<DashboardQuesNine />}
+            />
+            <Route
+              path="/assignment-4/Ques-9/profile"
+              element={<ProfileQuesNine />}
+            />
 
-
-            <Route path="/assignment-5" element={<ImportAssignmentFive/>}/>
+            <Route path="/assignment-5" element={<ImportAssignmentFive />} />
+            <Route
+              path="/assignment-5/Ques-14/"
+              element={<HomeQuesFourTeen />}
+            />
+            <Route
+              path="/assignment-5/Ques-14/about"
+              element={<AboutQuesFourTeen />}
+            />
+            <Route
+              path="/assignment-5/Ques-14/dashboard"
+              element={<DashboardQuesFourTeen />}
+            />
+            <Route
+              path="/assignment-5/Ques-14/login"
+              element={<LoginQuesFourTeen />}
+            />
           </Routes>
         </BrowserRouter>
       </AuthProvider>

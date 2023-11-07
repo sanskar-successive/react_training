@@ -1,14 +1,16 @@
 import withDataFetching from "./withDataFetching";
 
+
 const FetchAndDisplayData = ({ data, handleDataFetch }) => {
-    console.log(data);
+  console.log(data);
+  // console.log(handleDataFetch);
   return (
     <>
       <h3>Fetch and display data using HOC</h3>
-      <button>Fetch Data using HOC</button>
-      {/* {data.map((item) => {
+      <button onClick={handleDataFetch}>Fetch Data</button>
+      {data.map((item) => {
         return (<li>{item.title}</li>);
-      })} */}
+      })}
     </>
   );
 };

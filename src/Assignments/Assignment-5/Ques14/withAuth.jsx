@@ -4,11 +4,11 @@ const withAuth = (OriginalComponent)=>{
     const EnhancedComponent = ()=>{
         const [isAuth, setIsAuth] = useState(false);
         
+        
         return(
-            <OriginalComponent  />
+            <OriginalComponent isAuth = {isAuth} />
         )
     }
-    
     return EnhancedComponent;
 }
 export default withAuth;
