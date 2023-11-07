@@ -19,6 +19,7 @@ const FormPassword = () => {
   }
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(passwordOne, passwordTwo);
     if (passwordOne.length === 0 || passwordTwo.length === 0) {
       setComment("Please fill the required fields");
     } else if (
@@ -39,13 +40,13 @@ const FormPassword = () => {
       <h3>Form Password</h3>
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
+          type="password"
           placeholder="Enter Password"
           value={passwordOne}
           onChange={handlePasswordOneChange}
         />
         <input
-          type="text"
+          type="password"
           placeholder="Re-Enter Password"
           value={passwordTwo}
           onChange={handlePasswordTwoChange}
