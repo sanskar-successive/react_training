@@ -1,21 +1,22 @@
-<<<<<<< HEAD
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ImportAssignmentOne from "../AssignmentImports/ImportAssignmentOne";
+import {
+  AssignmentOne,
+  AssignmentThree,
+  AssignmentTwo,
+} from "../MainAssignments";
+import { HomeQuesFour, HomeQuesThree } from "../Assignments/Assignment-3";
+import { AboutQuesThree } from "../Assignments/Assignment-3/Ques3/Pages";
+import {
+  AboutQuesFour,
+  Dashboard,
+  LoginPage,
+  PageNotFoundQuesFour,
+  ProductDetail,
+  ProductsList,
+  Profile,
+  Setting,
+} from "../Assignments/Assignment-3/Ques4";
 import LandingPage from "../LandingPage";
-import ImportAssignmentTwo from "../AssignmentImports/ImportAssignmentTwo";
-import ImportAssignmentThree from "../AssignmentImports/ImportAssignmentThree";
-import AboutQuesThree from "../Assignments/Assignment-3/Ques3/Pages/AboutQuesThree";
-import HomeQuesFour from "../Assignments/Assignment-3/Ques4/Pages/HomeQuesFour";
-import AboutQuesFour from "../Assignments/Assignment-3/Ques4/Pages/AboutQuesFour";
-import LoginPage from "../Assignments/Assignment-3/Ques4/Pages/LoginPage";
-import Dashboard from "../Assignments/Assignment-3/Ques4/Pages/Dashboard";
-import Profile from "../Assignments/Assignment-3/Ques4/Pages/Profile";
-import Setting from "../Assignments/Assignment-3/Ques4/Pages/Setting";
-import ProductsList from "../Assignments/Assignment-3/Ques4/Pages/ProductsList";
-import ProductDetail from "../Assignments/Assignment-3/Ques4/Pages/ProductDetail";
-import PageNotFoundQuesFour from "../Assignments/Assignment-3/Ques4/Pages/PageNotFoundQuesFour";
-import HomeQuesThree from "../Assignments/Assignment-3/Ques3/Pages/HomeQuesThree";
-// import PageNotFoundQuesThree from "../Assignments/Assignment-3/Ques3/Pages/PageNotFoundQuesThree";
 import { AuthProvider } from "../Assignments/Assignment-3/Ques4/Authcontext";
 
 const AssignmentRoutes = () => {
@@ -25,11 +26,11 @@ const AssignmentRoutes = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/assignment-1" element={<ImportAssignmentOne />} />
+            <Route path="/assignment-1" element={<AssignmentOne />} />
 
-            <Route path="/assignment-2" element={<ImportAssignmentTwo />} />
+            <Route path="/assignment-2" element={<AssignmentTwo />} />
 
-            <Route path="/assignment-3" element={<ImportAssignmentThree />} />
+            <Route path="/assignment-3" element={<AssignmentThree />} />
             <Route path="/assignment-3/Ques-3" element={<HomeQuesThree />} />
             <Route
               path="/assignment-3/Ques-3/about"
@@ -71,23 +72,3 @@ const AssignmentRoutes = () => {
   );
 };
 export default AssignmentRoutes;
-=======
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import {AssignmentOne, AssignmentTwo} from '../MainAssignments';
-import LandingPage from '../LandingPage';
-
-const AssignmentRoutes = ()=>{
-    return(
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path='/' element={<LandingPage/>} />
-                    <Route path='/assignment-1' element={<AssignmentOne/>}/>
-                    <Route path='/assignment-2' element={<AssignmentTwo/>}/>
-                </Routes>
-            </BrowserRouter>
-        </>
-    )
-}
-export default AssignmentRoutes;
->>>>>>> cfa68807e3dfffcf187c332e6bc9f0a5f46ea933

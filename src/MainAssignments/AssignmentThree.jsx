@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import HomeQuesOne from "../Assignments/Assignment-3/Ques1/HomeQuesOne";
-import WrapperPage from "../Assignments/Assignment-3/Ques2/WrapperPage";
+import { HomeQuesOne, WrapperPage } from "../Assignments/Assignment-3";
 
-const ImportAssignmentThree = () => {
+
+
+const AssignmentThree = () => {
   return (
     <>
       <h3 style={{ color: "blue" }}>Ques 1</h3>
@@ -22,4 +23,4 @@ const ImportAssignmentThree = () => {
   );
 };
 
-export default ImportAssignmentThree;
+export default AssignmentThree;
