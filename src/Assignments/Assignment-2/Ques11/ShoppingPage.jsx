@@ -1,14 +1,11 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import Product from "./Product";
+import { products } from "./products";
 
 const ShoppingPage = () => {
 
-  const products = [
-    { id: 1, name: "Product 1", price: 10 },
-    { id: 2, name: "Product 2", price: 15 },
-    { id: 3, name: "Product 3", price: 20 },
-  ];
+  
   const { cart, removeFromCart, clearCart } = useContext(CartContext);
   const handleRemoveItem = (item) => {
     removeFromCart(item);

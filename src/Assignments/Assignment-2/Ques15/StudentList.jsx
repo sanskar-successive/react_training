@@ -5,16 +5,10 @@
 // Include a button that, when clicked, appends a new student name to the list.
 
 import { useMemo, useState } from "react";
+import { studentArray } from "./studentArray";
 
 const StudentList = () => {
   
-  const studentArray = [
-    "student1",
-    "student2",
-    "student3",
-    "student4",
-    "student5",
-  ];
   const [studentList, setStudentList] = useState(studentArray);
   const [newStudent, setNewStudent] = useState("");
   const handleAddNewStudent = () => {

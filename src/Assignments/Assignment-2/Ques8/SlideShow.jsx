@@ -4,11 +4,11 @@
 // Include a time interval option to control the automatic slideshow progression.
 
 import { useEffect, useState } from "react";
+import { elements } from "./elements";
 
 const SlideShow = () => {
   
   const [pause, setPause] = useState(false);
-  const elements = ["img0.jpg", "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
   let [currentIndex, setCurrentIndex] = useState(0);
   currentIndex %= elements.length;
   useEffect(() => {
