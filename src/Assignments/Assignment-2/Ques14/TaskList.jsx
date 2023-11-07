@@ -5,16 +5,10 @@
 // Ensure that clicking the "Complete" button for one task doesn't trigger unnecessary re-renders for other tasks.
 
 import { useCallback, useState } from "react";
+import { tasks } from "./tasks";
 
 const TaskList = () => {
-  
-  const tasks = [
-    { name: "task1", status: "to do" },
-    { name: "task2", status: "to do" },
-    { name: "task3", status: "to do" },
-    { name: "task4", status: "to do" },
-    { name: "task5", status: "to do" },
-  ];
+
   const [taskList, setTaskList] = useState(tasks);
   const handleCompletedTask = useCallback(
     (taskId) => {

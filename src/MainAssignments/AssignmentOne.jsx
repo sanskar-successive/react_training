@@ -1,11 +1,6 @@
-import Greeting from "../Assignments/Assignment-1/Ques1/Greeting";
-import Usercard from "../Assignments/Assignment-1/Ques2/Usercard";
-import Weather from "../Assignments/Assignment-1/Ques3/Weather";
-import Counter from "../Assignments/Assignment-1/Ques4/Counter";
-import Tasklist from "../Assignments/Assignment-1/Ques5/Tasklist";
-import Button from "../Assignments/Assignment-1/Ques6/Button";
+import {Button, Counter, Greeting, Tasklist, Usercard, Weather} from "../Assignments/Assignment-1";
 
-const ImportAssignmentOne = () => {
+const AssignmentOne = () => {
   return (
     <>
       <h3 style={{ color: "blue" }}>Ques 1</h3>
@@ -46,4 +41,4 @@ const ImportAssignmentOne = () => {
     </>
   );
 };
-export default ImportAssignmentOne;
+export default AssignmentOne;
