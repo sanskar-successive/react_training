@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
+  AssignmentFive,
   AssignmentFour,
   AssignmentOne,
   AssignmentThree,
   AssignmentTwo,
 } from "../MainAssignments";
-import { HomeQuesFour, HomeQuesThree } from "../Assignments/Assignment-3";
-import { AboutQuesThree } from "../Assignments/Assignment-3/Ques3/Pages";
 import {
   AboutQuesFour,
   Dashboard,
+  HomeQuesFour,
   LoginPage,
   PageNotFoundQuesFour,
   ProductDetail,
@@ -25,7 +25,13 @@ import {
   HomeQuesNine,
   ProfileQuesNine,
 } from "../Assignments/Assignment-4/Ques9";
-import AssignmentFive from "../MainAssignments/AssignmentFive";
+import {
+  AboutQuesFourTeen,
+  DashboardQuesFourTeen,
+  HomeQuesFourTeen,
+  LoginQuesFourTeen,
+} from "../Assignments/Assignment-5/Ques14";
+import { AboutQuesThree, HomeQuesThree } from "../Assignments/Assignment-3/Ques3";
 
 const AssignmentRoutes = () => {
   return (
@@ -37,7 +43,7 @@ const AssignmentRoutes = () => {
             <Route path="/assignment-1" element={<AssignmentOne />} />
             <Route path="/assignment-2" element={<AssignmentTwo />} />
             <Route path="/assignment-3" element={<AssignmentThree />} />
-            <Route path="/assignment-3/Ques-3" element={<HomeQuesThree />} />
+            <Route path="/assignment-3/Ques-3/" element={<HomeQuesThree />} />
             <Route
               path="/assignment-3/Ques-3/about"
               element={<AboutQuesThree />}
@@ -84,7 +90,23 @@ const AssignmentRoutes = () => {
               path="/assignment-4/Ques-9/profile"
               element={<ProfileQuesNine />}
             />
-            <Route path="/assignment-5" element={<AssignmentFive/>} />
+            <Route path="/assignment-5" element={<AssignmentFive />} />
+            <Route
+              path="/assignment-5/Ques-14/"
+              element={<HomeQuesFourTeen />}
+            />
+            <Route
+              path="/assignment-5/Ques-14/about"
+              element={<AboutQuesFourTeen />}
+            />
+            <Route
+              path="/assignment-5/Ques-14/dashboard"
+              element={<DashboardQuesFourTeen />}
+            />
+            <Route
+              path="/assignment-5/Ques-14/login"
+              element={<LoginQuesFourTeen />}
+            />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
