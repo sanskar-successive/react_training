@@ -4,22 +4,22 @@ const DataFetcher = () => {
   const [data, setData] = useState([]);
   const apiURL = "https://jsonplaceholder.typicode.com/posts";
 
-    const handleDataFetch = () => {
+    // const handleDataFetch = () => {
 
-        const promise = fetch(apiURL);
+    //     const promise = fetch(apiURL);
 
-        return promise
-        .then((res) => res.json())
-        .then((apiData) => setData(apiData))
-        .catch((err) => console.log(err));
-    };
+    //     return promise
+    //     .then((res) => res.json())
+    //     .then((apiData) => setData(apiData))
+    //     .catch((err) => console.log(err));
+    // };
 
-//   const handleDataFetch = async () => {
-//     const response = await fetch(apiURL);
-//     const apiData = await response.json();
+  const handleDataFetch = async () => {
+    const response = await fetch(apiURL);
+    const apiData = await response.json();
 
-//     setData(apiData);
-//   };
+    setData(apiData);
+  };
 
 
 //   useEffect(() => {
