@@ -32,6 +32,7 @@ import {
   LoginQuesFourTeen,
 } from "../Assignments/Assignment-5/Ques14";
 import { AboutQuesThree, HomeQuesThree } from "../Assignments/Assignment-3/Ques3";
+import AssignmentSix from "../MainAssignments/AssignmentSix";
 
 const AssignmentRoutes = () => {
   return (
@@ -96,17 +97,18 @@ const AssignmentRoutes = () => {
               element={<HomeQuesFourTeen />}
             />
             <Route
-              path="/assignment-5/Ques-14/about"
+              path="/assignment-5/Ques-14/about/"
               element={<AboutQuesFourTeen />}
             />
             <Route
-              path="/assignment-5/Ques-14/dashboard"
+              path="/assignment-5/Ques-14/dashboard/"
               element={<DashboardQuesFourTeen />}
             />
             <Route
-              path="/assignment-5/Ques-14/login"
+              path="/assignment-5/Ques-14/login/"
               element={<LoginQuesFourTeen />}
             />
+            <Route path="/assignment-6/" element={<AssignmentSix/>} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
