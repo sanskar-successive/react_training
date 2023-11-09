@@ -1,26 +1,25 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ImportAssignmentOne from "../AssignmentImports/ImportAssignmentOne";
+import {
+  AssignmentFour,
+  AssignmentOne,
+  AssignmentThree,
+  AssignmentTwo,
+} from "../MainAssignments";
+import { HomeQuesFour, HomeQuesThree } from "../Assignments/Assignment-3";
+import { AboutQuesThree } from "../Assignments/Assignment-3/Ques3/Pages";
+import {
+  AboutQuesFour,
+  Dashboard,
+  LoginPage,
+  PageNotFoundQuesFour,
+  ProductDetail,
+  ProductsList,
+  Profile,
+  Setting,
+} from "../Assignments/Assignment-3/Ques4";
 import LandingPage from "../LandingPage";
-import ImportAssignmentTwo from "../AssignmentImports/ImportAssignmentTwo";
-import ImportAssignmentThree from "../AssignmentImports/ImportAssignmentThree";
-import AboutQuesThree from "../Assignments/Assignment-3/Ques3/Pages/AboutQuesThree";
-import HomeQuesFour from "../Assignments/Assignment-3/Ques4/Pages/HomeQuesFour";
-import AboutQuesFour from "../Assignments/Assignment-3/Ques4/Pages/AboutQuesFour";
-import LoginPage from "../Assignments/Assignment-3/Ques4/Pages/LoginPage";
-import Dashboard from "../Assignments/Assignment-3/Ques4/Pages/Dashboard";
-import Profile from "../Assignments/Assignment-3/Ques4/Pages/Profile";
-import Setting from "../Assignments/Assignment-3/Ques4/Pages/Setting";
-import ProductsList from "../Assignments/Assignment-3/Ques4/Pages/ProductsList";
-import ProductDetail from "../Assignments/Assignment-3/Ques4/Pages/ProductDetail";
-import PageNotFoundQuesFour from "../Assignments/Assignment-3/Ques4/Pages/PageNotFoundQuesFour";
-import HomeQuesThree from "../Assignments/Assignment-3/Ques3/Pages/HomeQuesThree";
-// import PageNotFoundQuesThree from "../Assignments/Assignment-3/Ques3/Pages/PageNotFoundQuesThree";
 import { AuthProvider } from "../Assignments/Assignment-3/Ques4/Authcontext";
-import ImportAssignmentFour from "../AssignmentImports/ImportAssignmentFour";
-import HomeQuesNine from "../Assignments/Assignment-4/Ques9/Pages/HomeQuesNine";
-import AboutQuesNine from "../Assignments/Assignment-4/Ques9/Pages/AboutQuesNine";
-import DashboardQuesNine from "../Assignments/Assignment-4/Ques9/Pages/DashboardQuesNine";
-import ProfileQuesNine from "../Assignments/Assignment-4/Ques9/Pages/ProfileQuesNine";
+import { AboutQuesNine, DashboardQuesNine, HomeQuesNine, ProfileQuesNine } from "../Assignments/Assignment-4/Ques9";
 
 const AssignmentRoutes = () => {
   return (
@@ -29,11 +28,11 @@ const AssignmentRoutes = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/assignment-1" element={<ImportAssignmentOne />} />
+            <Route path="/assignment-1" element={<AssignmentOne />} />
 
-            <Route path="/assignment-2" element={<ImportAssignmentTwo />} />
+            <Route path="/assignment-2" element={<AssignmentTwo />} />
 
-            <Route path="/assignment-3" element={<ImportAssignmentThree />} />
+            <Route path="/assignment-3" element={<AssignmentThree />} />
             <Route path="/assignment-3/Ques-3" element={<HomeQuesThree />} />
             <Route
               path="/assignment-3/Ques-3/about"
@@ -69,11 +68,13 @@ const AssignmentRoutes = () => {
             />
             <Route path="*" element={<PageNotFoundQuesFour />} />
 
-            <Route path="/assignment-4" element={<ImportAssignmentFour />} />
+            <Route path="/assignment-4" element={<AssignmentFour />} />
             <Route path="/assignment-4/Ques-9" element={<HomeQuesNine />} />
             <Route path="/assignment-4/Ques-9/about" element={<AboutQuesNine />} />
             <Route path="/assignment-4/Ques-9/dashboard" element={<DashboardQuesNine />} />
             <Route path="/assignment-4/Ques-9/profile" element={<ProfileQuesNine />} />
+
+            
           </Routes>
         </BrowserRouter>
       </AuthProvider>

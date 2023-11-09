@@ -5,9 +5,7 @@
 // Add a "404 Not Found" page for any invalid routes.
 
 import { Link } from "react-router-dom";
-
 const HomeQuesThree = () => {
-  
   return (
     <>
       <h3>Home page</h3>
@@ -15,5 +13,4 @@ const HomeQuesThree = () => {
     </>
   );
 };
-
 export default HomeQuesThree;
