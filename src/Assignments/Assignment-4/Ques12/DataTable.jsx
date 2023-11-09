@@ -35,7 +35,6 @@ const DataTable = () => {
     }
     setSortBy(field);
   };
-
   const sortedData = [...rows].sort((a, b) => {
     if (order === "asc") {
       if (a[sortBy] > b[sortBy]) return 1;
@@ -45,7 +44,6 @@ const DataTable = () => {
       else return -1;
     }
   });
-
   const pageData = sortedData.slice(
     page * rowsPerPage,
     page * rowsPerPage + rowsPerPage
@@ -102,7 +100,6 @@ const DataTable = () => {
           </TableBody>
         </Table>
       </TableContainer>
-
       <TablePagination
         component="div"
         rowsPerPageOptions={[3, 6]}

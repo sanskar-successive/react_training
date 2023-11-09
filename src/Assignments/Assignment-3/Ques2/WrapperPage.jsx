@@ -11,5 +11,4 @@ const WrapperPage = () => {
     </AuthProvider>
   );
 };
-
 export default WrapperPage;

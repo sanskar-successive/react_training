@@ -15,7 +15,6 @@ const ModalDailog = () => {
   const [dailogOpen, setDailogOpen] = useState(false);
   const [feedback, setFeedback] = useState("");
   const [showSuccess, setShowSuccess] = useState("");
-
   const handleSubmitClick = () => {
     if (feedback.length > 0) {
       console.log(feedback);

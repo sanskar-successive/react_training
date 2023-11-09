@@ -1,24 +1,23 @@
-// 4.Build a registration form with two password fields. Implement controlled components for both password inputs. 
+// 4.Build a registration form with two password fields. Implement controlled components for both password inputs.
 // Add a validation rule to ensure that the two passwords match before allowing the form submission.
 
 import { useState } from "react";
 
 const FormPassword = () => {
-
   const [passwordOne, setPasswordOne] = useState("");
   const [passwordTwo, setPasswordTwo] = useState("");
   const [comment, setComment] = useState("");
-
-  const handlePasswordOneChange = (event)=>{
+  const handlePasswordOneChange = (event) => {
     setPasswordOne(event.target.value);
     setComment("");
-  }
-  const handlePasswordTwoChange = (event)=>{
+  };
+  const handlePasswordTwoChange = (event) => {
     setPasswordTwo(event.target.value);
     setComment("");
-  }
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(passwordOne, passwordTwo);
     if (passwordOne.length === 0 || passwordTwo.length === 0) {
       setComment("Please fill the required fields");
     } else if (
@@ -39,13 +38,13 @@ const FormPassword = () => {
       <h3>Form Password</h3>
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
+          type="password"
           placeholder="Enter Password"
           value={passwordOne}
           onChange={handlePasswordOneChange}
         />
         <input
-          type="text"
+          type="password"
           placeholder="Re-Enter Password"
           value={passwordTwo}
           onChange={handlePasswordTwoChange}

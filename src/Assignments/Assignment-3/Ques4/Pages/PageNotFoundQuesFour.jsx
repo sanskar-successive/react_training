@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 const PageNotFoundQuesFour = () => {
   return (
     <>
@@ -8,5 +7,4 @@ const PageNotFoundQuesFour = () => {
     </>
   );
 };
-
 export default PageNotFoundQuesFour;

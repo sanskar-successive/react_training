@@ -9,7 +9,6 @@ export const Parent = ({ children }) => {
   const handleLogout = () => {
     setIsLoggedIn(false);
   };
-
   return (
     <AuthContext.Provider value={{ isLoggedIn, handleLogin, handleLogout }}>
       {children}

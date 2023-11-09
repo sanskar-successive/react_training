@@ -1,10 +1,7 @@
 import { useFormik } from "formik";
 import FormSchema from "./FormSchema";
+import { initialValues } from "./initials";
 
-const initialValues = {
-  username: "",
-  email: "",
-};
 const FormValidation = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({

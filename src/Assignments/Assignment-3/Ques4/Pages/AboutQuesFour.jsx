@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 const AboutQuesFour = () => {
   return (
     <>
@@ -8,5 +7,4 @@ const AboutQuesFour = () => {
     </>
   );
 };
-
 export default AboutQuesFour;

@@ -1,6 +1,5 @@
 import Child from "./Child";
 import { Parent } from "./Parent";
-
 const HomeQuesOne = () => {
   return (
     <Parent>
@@ -8,5 +7,4 @@ const HomeQuesOne = () => {
     </Parent>
   );
 };
-
 export default HomeQuesOne;

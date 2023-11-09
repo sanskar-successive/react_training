@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-
 const AboutQuesThree = () => {
-
   return (
     <>
       <h3>About page</h3>
@@ -9,5 +7,4 @@ const AboutQuesThree = () => {
     </>
   );
 };
-
 export default AboutQuesThree;

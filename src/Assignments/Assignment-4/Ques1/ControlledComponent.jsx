@@ -3,7 +3,6 @@
 // the component's state should update accordingly.
 
 import { useState } from "react";
-
 const ControlledComponent = () => {
   const [state, setState] = useState("");
   return (
@@ -19,5 +18,4 @@ const ControlledComponent = () => {
     </>
   );
 };
-
 export default ControlledComponent;

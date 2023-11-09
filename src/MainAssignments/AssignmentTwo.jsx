@@ -1,24 +1,26 @@
-import Counter from "../Assignments/Assignment-2/Ques1/Counter";
-import LanguageSwitcher from "../Assignments/Assignment-2/Ques10/LanguageSwitcher";
-import WrapperPage from "../Assignments/Assignment-2/Ques11/WrapperPage";
-import VotingApp from "../Assignments/Assignment-2/Ques12/VotingApp";
-import Parent from "../Assignments/Assignment-2/Ques13/Parent";
-import TaskList from "../Assignments/Assignment-2/Ques14/TaskList";
-import StudentList from "../Assignments/Assignment-2/Ques15/StudentList";
-import EmployeeSalary from "../Assignments/Assignment-2/Ques16/EmployeeSalary";
-import CopyButton from "../Assignments/Assignment-2/Ques17/CopyButton";
-import UserStore from "../Assignments/Assignment-2/Ques18/UserStore";
-import Countdown from "../Assignments/Assignment-2/Ques19/Countdown";
-import PersonForm from "../Assignments/Assignment-2/Ques2/PersonForm";
-import TodoList from "../Assignments/Assignment-2/Ques3/TodoList";
-import RandomNumberGenerator from "../Assignments/Assignment-2/Ques4/RandomNumberGenerator";
-import CounterWithStep from "../Assignments/Assignment-2/Ques5/CounterWithStep";
-import Clock from "../Assignments/Assignment-2/Ques6/Clock";
-import Notification from "../Assignments/Assignment-2/Ques7/Notification";
-import SlideShow from "../Assignments/Assignment-2/Ques8/SlideShow";
-import ThemeSwitcher from "../Assignments/Assignment-2/Ques9/ThemeSwitcher";
+import {
+  Counter,
+  PersonForm,
+  TodoList,
+  RandomNumberGenerator,
+  CounterWithStep,
+  Clock,
+  Notification,
+  SlideShow,
+  ThemeSwitcher,
+  LanguageSwitcher,
+  WrapperPage,
+  VotingApp,
+  Parent,
+  TaskList,
+  StudentList,
+  EmployeeSalary,
+  CopyButton,
+  UserStore,
+  Countdown,
+} from "../Assignments/Assignment-2";
 
-const ImportAssignmentTwo = () => {
+const AssignmentTwo = () => {
   return (
     <>
       <h3 style={{ color: "blue" }}>Ques 1</h3>
@@ -100,4 +102,4 @@ const ImportAssignmentTwo = () => {
   );
 };
 
-export default ImportAssignmentTwo;
+export default AssignmentTwo;
