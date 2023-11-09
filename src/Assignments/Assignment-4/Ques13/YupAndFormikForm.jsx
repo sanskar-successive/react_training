@@ -1,15 +1,7 @@
 import { useFormik } from "formik";
 import YupFormSchema from "./YupFormSchema";
 import { TextField, Button } from "@mui/material";
-
-const initialValues = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  phone: "",
-  password: "",
-  confirm_password: "",
-};
+import { initialValues } from "./initials";
 
 const YupAndFormikForm = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
@@ -21,7 +13,6 @@ const YupAndFormikForm = () => {
         action.resetForm();
       },
     });
-
   return (
     <>
       <h3>Form using Yup and Formik</h3>

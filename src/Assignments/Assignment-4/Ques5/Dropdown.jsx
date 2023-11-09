@@ -2,16 +2,9 @@
 // When an option is selected, display a message showing the selected value.
 
 import { useState } from "react";
+import { list } from "./DropdownItems";
 
 const Dropdown = () => {
-  const list = [
-    "option1",
-    "option2",
-    "option3",
-    "option4",
-    "option5",
-    "option6",
-  ];
   const [selectedItem, setSelectedItem] = useState("");
   const handleSelect = (e) => {
     if (e.target.value === "select") setSelectedItem("");

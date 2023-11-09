@@ -1,5 +1,4 @@
 import Sidebar from "../Sidebar";
-
 const AboutQuesNine = () => {
   return (
     <>

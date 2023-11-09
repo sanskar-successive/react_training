@@ -3,12 +3,13 @@
 // Otherwise, nothing should be displayed.
 
 import { useState } from "react";
+import { AUTH } from "./constants";
 
 const ControlledInputAndButton = () => {
   const [text, setText] = useState("");
   const [textToDisplay, setTextToDisplay] = useState("");
   const handleClick = () => {
-    if (text === "show") {
+    if (text.toLowerCase() === AUTH) {
       setTextToDisplay(text);
     } else {
       setTextToDisplay("");
