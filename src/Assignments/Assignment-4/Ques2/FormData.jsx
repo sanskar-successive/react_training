@@ -13,7 +13,6 @@ const FormData = () => {
     e.preventDefault();
     console.log(text, check1, check2, radio1, radio2);
   };
-
   return (
     <>
       <h3>Form Data</h3>
@@ -24,25 +23,25 @@ const FormData = () => {
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        Check1 :{" "}
+        Check1 :
         <input
           type="checkbox"
           checked={check1}
           onChange={(e) => setCheck1(e.target.checked)}
         />
-        Check2 :{" "}
+        Check2 :
         <input
           type="checkbox"
           checked={check2}
           onChange={(e) => setCheck2(e.target.checked)}
         />
-        Radio1 :{" "}
+        Radio1 :
         <input
           type="radio"
           value={radio1}
           onChange={(e) => setRadio1(e.target.checked)}
         />
-        Radio2 :{" "}
+        Radio2 :
         <input
           type="radio"
           value={radio2}

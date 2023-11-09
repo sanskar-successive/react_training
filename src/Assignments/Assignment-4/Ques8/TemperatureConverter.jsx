@@ -7,7 +7,6 @@ import { convertCtoF, convertFtoC } from "./ConverterFunctions";
 
 const TemperatureConverter = () => {
   const [temp, setTemp] = useState({ celsius: 0, fahrenheit: 32 });
-  
   const handleCelsiusChange = (e) => {
     setTemp({
       celsius: e.target.value,
@@ -20,7 +19,6 @@ const TemperatureConverter = () => {
       fahrenheit: e.target.value,
     });
   };
-
   return (
     <>
       <h3>Temperature Converter</h3>

@@ -10,7 +10,6 @@ const Dropdown = () => {
     if (e.target.value === "select") setSelectedItem("");
     else setSelectedItem(e.target.value);
   };
-
   return (
     <>
       <h3>Dropdown</h3>
