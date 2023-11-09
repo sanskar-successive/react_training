@@ -2,12 +2,13 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"
 import withAuth from "../withAuth";
 
-const LoginQuesFourTeen = ()=>{
+const LoginQuesFourTeen = ({isAuth, setIsAuth})=>{
     const [user, setUser] = useState({name:"", password:""});
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    // const [isLoggedIn, setIsLoggedIn] = useState(isAuth);
     const navigate = useNavigate();
     const handleLogin = ()=>{
-        setIsLoggedIn(true);
+        // setIsLoggedIn(true);
+        setIsAuth(true);
         setUser({name:"", password:""});
         navigate('/assignment-5/Ques-14/')
     }
