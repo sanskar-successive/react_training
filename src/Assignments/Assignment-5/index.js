@@ -11,6 +11,7 @@ import ButtonExample from "./Ques12/ButtonExample";
 import CustomModal from "./Ques13/CustomModal";
 import LogEvents from "./Ques15/LogEvents";
 import FetchAndDisplayData from "./Ques16/FetchAndDisplayData";
+import PublicComponent from "./Ques14/PublicComponent";
 
 export {
   DataFetcher,
@@ -26,4 +27,5 @@ export {
   CustomModal,
   LogEvents,
   FetchAndDisplayData,
+  PublicComponent
 };

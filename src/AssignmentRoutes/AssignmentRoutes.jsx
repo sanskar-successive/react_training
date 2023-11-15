@@ -25,14 +25,13 @@ import {
   HomeQuesNine,
   ProfileQuesNine,
 } from "../Assignments/Assignment-4/Ques9";
-import {
-  AboutQuesFourTeen,
-  DashboardQuesFourTeen,
-  HomeQuesFourTeen,
-  LoginQuesFourTeen,
-} from "../Assignments/Assignment-5/Ques14";
 import { AboutQuesThree, HomeQuesThree } from "../Assignments/Assignment-3/Ques3";
+<<<<<<< HEAD
 import AssignmentSix from "../MainAssignments/AssignmentSix";
+=======
+import { PublicComponent } from "../Assignments/Assignment-5";
+import Subscribe from "../Assignments/Assignment-5/Ques14/Subscribe";
+>>>>>>> ef837e96fdd2f2a5daf1f3fa7327fd8fe39dfd02
 
 const AssignmentRoutes = () => {
   return (
@@ -94,19 +93,11 @@ const AssignmentRoutes = () => {
             <Route path="/assignment-5" element={<AssignmentFive />} />
             <Route
               path="/assignment-5/Ques-14/"
-              element={<HomeQuesFourTeen />}
+              element={<PublicComponent />}
             />
             <Route
-              path="/assignment-5/Ques-14/about/"
-              element={<AboutQuesFourTeen />}
-            />
-            <Route
-              path="/assignment-5/Ques-14/dashboard/"
-              element={<DashboardQuesFourTeen />}
-            />
-            <Route
-              path="/assignment-5/Ques-14/login/"
-              element={<LoginQuesFourTeen />}
+              path="/assignment-5/Ques-14/subscribe"
+              element={<Subscribe />}
             />
             <Route path="/assignment-6/" element={<AssignmentSix/>} />
           </Routes>
