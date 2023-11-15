@@ -1,14 +1,14 @@
 import { Suspense, lazy } from "react";
-const About = lazy(() => import("./About"));
-const Home = lazy(() => import("./Home"));
-const Contact = lazy(() => import("./Contact"));
+const LazyComponent1 = lazy(() => import("./LazyComponent1"));
+const LazyComponent2 = lazy(() => import("./LazyComponent2"));
+
+
 const LazyLoading = () => {
   return (
     <>
-      <Suspense fallback={<div>Loading</div>}>
-        <Home />
-        <About />
-        <Contact />
+      <Suspense fallback={<p>Loading...</p>}>
+        <LazyComponent1 />
+        <LazyComponent2 />
       </Suspense>
     </>
   );

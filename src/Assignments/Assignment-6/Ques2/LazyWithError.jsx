@@ -1,19 +1,18 @@
 import { Suspense, lazy } from "react";
-import { ErrorBoundary } from "react-error-boundary";
-const About = lazy(() => import("./About"));
-const Home = lazy(() => import("./Home"));
-const Contact = lazy(() => import("./Contact"));
-const QuestionTwo = () => {
+import ErrorBoundary from "./ErrorBoundary";
+const LazyComponent1 = lazy(() => import("../Ques1/LazyComponent1"))
+const LazyComponent2 = lazy(() => import("../Ques1/LazyComponent2"))
+
+const LazyWithError = () => {
   return (
     <>
-    <ErrorBoundary fallback={<div>Have Some Errors</div>}>
-      <Suspense fallback={<div>Loading</div>}>
-        <Home />
-        <About />
-        <Contact/>
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback={<p>Loading...</p>}>
+          <LazyComponent1 />
+          <LazyComponent2 />
+        </Suspense>
       </ErrorBoundary>
     </>
   );
 };
-export default QuestionTwo;
+export default LazyWithError;

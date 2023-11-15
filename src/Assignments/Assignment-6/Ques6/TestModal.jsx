@@ -17,7 +17,7 @@ const style = {
   p: 4,
 };
 
-const ModalComponent = () => {
+const TestModal = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -34,4 +34,4 @@ const ModalComponent = () => {
     </div>
   );
 };
-export default ModalComponent;
+export default TestModal;

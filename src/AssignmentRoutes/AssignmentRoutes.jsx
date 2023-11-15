@@ -3,6 +3,7 @@ import {
   AssignmentFive,
   AssignmentFour,
   AssignmentOne,
+  AssignmentSix,
   AssignmentThree,
   AssignmentTwo,
 } from "../MainAssignments";
