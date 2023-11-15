@@ -1,13 +1,17 @@
-import { useState } from "react";
+import React from 'react'
 
-const withAuth = (OriginalComponent)=>{
+const withAuth = (OriginalComponent) => {
+  
     const EnhancedComponent = ()=>{
+        let isAuth = false;
+        if(sessionStorage.getItem("paidUser")==1){
+            isAuth = true;
+        }
 
-        const [isAuth, setIsAuth] = useState(false);
-        return(
-            <OriginalComponent isAuth={isAuth} setIsAuth={setIsAuth}/>
-        )
+        return <OriginalComponent isAuth={isAuth}/>
+
     }
     return EnhancedComponent;
 }
-export default withAuth;
+
+export default withAuth
