@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
+  AssignmentFour,
   AssignmentOne,
   AssignmentThree,
   AssignmentTwo,
@@ -18,6 +19,12 @@ import {
 } from "../Assignments/Assignment-3/Ques4";
 import LandingPage from "../LandingPage";
 import { AuthProvider } from "../Assignments/Assignment-3/Ques4/Authcontext";
+import {
+  AboutQuesNine,
+  DashboardQuesNine,
+  HomeQuesNine,
+  ProfileQuesNine,
+} from "../Assignments/Assignment-4/Ques9";
 
 const AssignmentRoutes = () => {
   return (
@@ -27,16 +34,13 @@ const AssignmentRoutes = () => {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/assignment-1" element={<AssignmentOne />} />
-
             <Route path="/assignment-2" element={<AssignmentTwo />} />
-
             <Route path="/assignment-3" element={<AssignmentThree />} />
             <Route path="/assignment-3/Ques-3" element={<HomeQuesThree />} />
             <Route
               path="/assignment-3/Ques-3/about"
               element={<AboutQuesThree />}
             />
-
             <Route path="/assignment-3/Ques-4" element={<HomeQuesFour />} />
             <Route
               path="/assignment-3/Ques-4/about"
@@ -65,6 +69,20 @@ const AssignmentRoutes = () => {
               element={<ProductDetail />}
             />
             <Route path="*" element={<PageNotFoundQuesFour />} />
+            <Route path="/assignment-4" element={<AssignmentFour />} />
+            <Route path="/assignment-4/Ques-9" element={<HomeQuesNine />} />
+            <Route
+              path="/assignment-4/Ques-9/about"
+              element={<AboutQuesNine />}
+            />
+            <Route
+              path="/assignment-4/Ques-9/dashboard"
+              element={<DashboardQuesNine />}
+            />
+            <Route
+              path="/assignment-4/Ques-9/profile"
+              element={<ProfileQuesNine />}
+            />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
