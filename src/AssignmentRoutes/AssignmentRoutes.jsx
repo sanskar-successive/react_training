@@ -26,12 +26,8 @@ import {
   ProfileQuesNine,
 } from "../Assignments/Assignment-4/Ques9";
 import { AboutQuesThree, HomeQuesThree } from "../Assignments/Assignment-3/Ques3";
-<<<<<<< HEAD
-import AssignmentSix from "../MainAssignments/AssignmentSix";
-=======
 import { PublicComponent } from "../Assignments/Assignment-5";
 import Subscribe from "../Assignments/Assignment-5/Ques14/Subscribe";
->>>>>>> ef837e96fdd2f2a5daf1f3fa7327fd8fe39dfd02
 
 const AssignmentRoutes = () => {
   return (
