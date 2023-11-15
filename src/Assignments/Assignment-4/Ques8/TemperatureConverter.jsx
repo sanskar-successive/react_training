@@ -8,17 +8,17 @@ import { convertCtoF, convertFtoC } from "./ConverterFunctions";
 const TemperatureConverter = () => {
   const [temp, setTemp] = useState({ celsius: 0, fahrenheit: 32 });
   const handleCelsiusChange = (e) => {
-    const tempInCelsius = e.target.value;
+    const {value} = e.target;
     setTemp({
-      celsius: tempInCelsius,
-      fahrenheit: convertCtoF(tempInCelsius),
+      celsius: value,
+      fahrenheit: convertCtoF(value),
     });
   };
   const handleFahrenheitChange = (e) => {
-    const tempInFahrenheit = e.target.value;
+    const {value} = e.target;
     setTemp({
-      celsius: convertFtoC(tempInFahrenheit),
-      fahrenheit: tempInFahrenheit,
+      celsius: convertFtoC(value),
+      fahrenheit: value,
     });
   };
   return (
