@@ -5,12 +5,10 @@ const withDataFetching = (OriginalComponent) => {
     const EnhancedComponent = ()=>{
         const [apiData, setApiData] = useState([]);
         const apiURL = "https://jsonplaceholder.typicode.com/posts";
-
         const handleDataFetch = async ()=>{
             const response = await axios.get(apiURL);
             setApiData(response.data);
         }
-        
         return (
             <OriginalComponent data={apiData} handleDataFetch={handleDataFetch}/>
         )

@@ -4,12 +4,10 @@ import axios from "axios";
 const FetchDataUsingAxios = () => {
   const apiURL = "https://jsonplaceholder.typicode.com/posts";
   const [data, setData] = useState([]);
-
   const handleDataFetch = async () => {
     const response = await axios.get(apiURL);
     setData(response.data)
   };
-
   return (
     <>
       <h3>Fetch API data using axios</h3>

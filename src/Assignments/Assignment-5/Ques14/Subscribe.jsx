@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { AUTH_TOKEN } from "./authToken";
 
 const Subscribe = () => {
-  const validToken = "1a2b3c";
   const navigate = useNavigate();
   const [token, setToken] = useState(null);
   const handleSubscribe = () => {
-    if (token === validToken) {
+    if (token === AUTH_TOKEN){
       sessionStorage.setItem("paidUser", 1);
       setToken("");
       navigate("/assignment-5/Ques-14/");
@@ -16,7 +16,6 @@ const Subscribe = () => {
         navigate('/assignment-5/Ques-14/subscribe')
     }
   };
-
   return (
     <>
       <input

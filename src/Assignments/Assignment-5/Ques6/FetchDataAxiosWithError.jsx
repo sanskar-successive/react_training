@@ -5,7 +5,6 @@ const FetchDataAxiosWithError = () => {
   const [data, setData] = useState([]);
   const [showError, setShowError] = useState("");
   const apiURL = "https://jsonplaceholder.typicode.com/posts";
-
   const handleDataFetch = async () => {
     try {
       const response = await axios.get(apiURL);
@@ -18,11 +17,11 @@ const FetchDataAxiosWithError = () => {
   return (
     <>
       <h3>API data fetch using axios with error handling</h3>
-      {showError.length === 0 && (
+      {!showError.length && (
         <button onClick={handleDataFetch}>Fetch data</button>
       )}
-      {showError.length > 0 && <button onClick={handleDataFetch}>Retry</button>}
-      {data.length > 0 &&
+      {showError.length && <button onClick={handleDataFetch}>Retry</button>}
+      {data.length &&
         data.map((item) => {
           return <li>{item.title}</li>;
         })}

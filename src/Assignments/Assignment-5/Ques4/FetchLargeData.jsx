@@ -4,11 +4,9 @@ import Pagination from "./Pagination";
 const FetchLargeData = () => {
   const [data, setData] = useState([]);
   const apiURL = "https://jsonplaceholder.typicode.com/posts";
-
   const handleDataFetch = async () => {
     const response = await fetch(apiURL);
     const apiData = await response.json();
-
     setData(apiData);
   };
 

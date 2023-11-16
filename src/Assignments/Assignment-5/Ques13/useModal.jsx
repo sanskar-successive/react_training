@@ -2,7 +2,6 @@ import { useState } from "react";
 
 const useModal = ()=>{
     const [isOpen, setIsOpen] = useState(false);
-
     const openModal = ()=>{
         setIsOpen(true);
     }
@@ -12,7 +11,6 @@ const useModal = ()=>{
     const toggleModal = ()=>{
         setIsOpen(!isOpen);
     }
-
     return {isOpen, openModal, closeModal, toggleModal};
 }
 export default useModal;

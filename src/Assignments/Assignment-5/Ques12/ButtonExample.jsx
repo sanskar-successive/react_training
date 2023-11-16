@@ -4,19 +4,15 @@ const ButtonExample = () => {
   const handlePrimaryClick = () => {
     console.log("Primary Button Clicked!");
   };
-
   const handleSecondaryClick = () => {
     console.log("Secondary Button Clicked!");
   };
-
   const handleDangerClick = () => {
     console.log("Danger Button Clicked!");
   };
-
   return (
     <div>
       <h1>Reusable button example</h1>
-
       <Button
         label="Primary"
         onClick={handlePrimaryClick}
