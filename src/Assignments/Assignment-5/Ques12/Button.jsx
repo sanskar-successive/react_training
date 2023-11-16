@@ -1,15 +1,24 @@
-const Button = ({ label, style, buttonClick }) => {
-  let buttonClass = "button";
-  if (style === "primary") {
-    buttonClass += " button-primary";
-  } else if (style === "secondary") {
-    buttonClass += " button-secondary";
-  } else if (style === "danger") {
-    buttonClass += " button-danger";
-  }
+import React from "react";
+const Button = ({ styles, onClick, children }) => {
+  const buttonStyle = {
+    primary: {
+      backgroundColor: "blue",
+      color: "white",
+    },
+    secondary: {
+      backgroundColor: "gray",
+      color: "black",
+    },
+    danger: {
+      backgroundColor: "red",
+      color: "white",
+    },
+  };
   return (
     <>
-      <button className="buttonClass" onClick={buttonClick}>{label}</button>
+      <button style={buttonStyle[styles]} onClick={onClick}>
+        {children}
+      </button>
     </>
   );
 };
