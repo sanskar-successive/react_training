@@ -18,11 +18,11 @@ const FormPassword = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(passwordOne, passwordTwo);
-    if (passwordOne.length === 0 || passwordTwo.length === 0) {
+    if (passwordOne.length || passwordTwo.length) {
       setComment("Please fill the required fields");
     } else if (
-      passwordOne.length > 0 &&
-      passwordTwo.length > 0 &&
+      passwordOne.length &&
+      passwordTwo.length &&
       passwordOne !== passwordTwo
     ) {
       setComment("Please re-enter the password correctly");
@@ -32,7 +32,6 @@ const FormPassword = () => {
       setPasswordTwo("");
     }
   };
-
   return (
     <>
       <h3>Form Password</h3>

@@ -16,8 +16,7 @@ const ModalDailog = () => {
   const [feedback, setFeedback] = useState("");
   const [showSuccess, setShowSuccess] = useState("");
   const handleSubmitClick = () => {
-    if (feedback.length > 0) {
-      console.log(feedback);
+    if (feedback.length) {
       setFeedback("");
       setDailogOpen(false);
       setShowSuccess("Thanks for the feedback");
@@ -26,7 +25,6 @@ const ModalDailog = () => {
       }, 2000);
     }
   };
-
   return (
     <>
       <h3>Please give you valuable feedback</h3>
