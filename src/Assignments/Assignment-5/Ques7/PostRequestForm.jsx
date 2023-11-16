@@ -16,6 +16,7 @@ const PostRequestForm = () => {
       content: post.content,
     };
     const response = await axios.post("https://reqres.in/api/users", data);
+    console.log(response.data)
   };
   return (
     <>
