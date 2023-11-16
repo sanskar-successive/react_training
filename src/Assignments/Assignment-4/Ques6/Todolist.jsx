@@ -8,7 +8,7 @@ const TodoList = () => {
   const [task, setTask] = useState("");
   const [tasklist, setTasklist] = useState([]);
   const handleAddTask = () => {
-    if (task.length > 0) setTasklist([...tasklist, task]);
+    if (task.length) setTasklist([...tasklist, task]);
     setTask("");
   };
   const memoisedTaskList = useMemo(() => {

@@ -19,7 +19,7 @@ const MuiFormWithValidation = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationError = ValidateForm(formFields);
-    if (Object.keys(validationError).length === 0) {
+    if (Object.keys(validationError).length) {
       console.log(formFields);
     } else {
       setFieldError(validationError);
