@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { AUTH_TOKEN } from "./authToken";
 
 const Subscribe = () => {
-
   const navigate = useNavigate();
   const [token, setToken] = useState(null);
   const handleSubscribe = () => {
@@ -17,7 +16,6 @@ const Subscribe = () => {
         navigate('/assignment-5/Ques-14/subscribe')
     }
   };
-
   return (
     <>
       <input

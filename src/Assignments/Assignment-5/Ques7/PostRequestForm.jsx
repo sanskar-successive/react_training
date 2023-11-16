@@ -10,16 +10,6 @@ const PostRequestForm = () => {
   const handleContentChange = (e) => {
     setPost({ ...post, content: e.target.value });
   };
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     const data = {
-//       title: post.title,
-//       content: post.content,
-//     };
-//     axios.post("https://reqres.in/api/users", data)
-//     .then((response) => console.log(response));
-//   };
-
 const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
@@ -28,14 +18,13 @@ const handleSubmit = async (e) => {
     };
     const response = await axios.post("https://reqres.in/api/users", data);
     console.log(response);
-    
   };
   return (
     <>
       <form onSubmit={handleSubmit}>
-        Post title :{" "}
+        Post title :
         <input type="text" value={post.title} onChange={handleTitleChange} />
-        Post Content :{" "}
+        Post Content :
         <textarea
           cols="30"
           rows="10"

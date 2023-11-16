@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 const withLogger = (OriginalComponent) =>{
     const EnhancedComponent = (props)=>{
         const [count, setCount] = useState(0);
-
         const incCounter = ()=>{
             setCount(count+1);
         }
@@ -14,11 +13,6 @@ const withLogger = (OriginalComponent) =>{
                 console.log('Component Unmounts')
             }
         },[count])
-
-        // useEffect(()=>{
-        //     console.log('Component updates')
-        // },[count])
-
         return <OriginalComponent {...props} count={count} incCounter={incCounter} />
     }
     return EnhancedComponent;

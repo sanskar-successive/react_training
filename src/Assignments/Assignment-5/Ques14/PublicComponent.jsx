@@ -11,5 +11,4 @@ const PublicComponent = ({isAuth}) => {
     </>
   )
 }
-
 export default withAuth(PublicComponent);

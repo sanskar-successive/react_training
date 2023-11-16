@@ -7,7 +7,6 @@ const DataFetchWithErrorHandling = () => {
   const handleDataFetch = async () => {
     try{
         const response = await fetch(apiURL);
-
         if(!response.ok){
             throw new Error('some error occured');
         }
@@ -23,11 +22,11 @@ const DataFetchWithErrorHandling = () => {
   return (
     <>
       <h3>API Data Fetch with error handling</h3>
-      {showError.length === 0 && (
+      {!showError.length && (
         <button onClick={handleDataFetch}>Fetch data</button>
       )}
-      {showError.length > 0 && <button onClick={handleDataFetch}>Retry</button>}
-      {data.length > 0 &&
+      {showError.length && <button onClick={handleDataFetch}>Retry</button>}
+      {data.length &&
         data.map((item) => {
           return <li>{item.title}</li>;
         })}

@@ -3,15 +3,12 @@ import { useState } from "react";
 const Pagination = ({ rows, rowsPerPage }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPage = Math.floor((rows.length + rowsPerPage - 1) / rowsPerPage);
-
   const currentPageStartIndex = (currentPage - 1) * rowsPerPage;
   const currentPageEndIndex = currentPageStartIndex + rowsPerPage - 1;
-
   const currentRows = rows.slice(
     currentPageStartIndex,
     currentPageEndIndex + 1
   );
-
   const handleNextClick = () => {
     if (currentPage < totalPage) {
       setCurrentPage(currentPage + 1);

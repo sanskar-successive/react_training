@@ -5,16 +5,10 @@ import Pagination from "./Pagination";
 const FetchLargeDataGraphQL =()=>
 {
     const { data, loading, error} = useQuery(GET_ALL_CAPITALS);
-
-    console.log(data?.countries.edges, loading, error);
-
     let showData = loading ? "Can't get data" : data?.countries.edges
-    console.log(showData)
-    
       return(
         <>
             <h4>Hello</h4>
-
             {!loading && showData?.map((item)=>{
                 return(
                     <li>
@@ -23,7 +17,6 @@ const FetchLargeDataGraphQL =()=>
                 )
             })}
             {!loading && <Pagination rows={showData} rowsPerPage={3}/>}
-        
         </>
       )
 }
