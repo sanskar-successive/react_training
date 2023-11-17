@@ -1,3 +1,7 @@
+// 3.Create a React component named Counter that displays a number and two buttons, 
+// one for incrementing the number and another for decrementing it. 
+// Write tests using React Testing Library to ensure that the component behaves as expected.
+
 import { useState } from "react";
 
 const Counter = () => {

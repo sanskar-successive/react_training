@@ -1,3 +1,6 @@
+// 6.Create a React component (Modal) that displays a modal dialog with content. 
+// Users can open and close the modal. Write tests to check if the modal opens and closes when triggered.
+
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -16,7 +19,6 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-
 const TestModal = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
