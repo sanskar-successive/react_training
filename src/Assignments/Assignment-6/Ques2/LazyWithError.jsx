@@ -7,7 +7,7 @@ const LazyWithError = () => {
   return (
     <>
       <ErrorBoundary>
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<p>Something went wrong</p>}>
           <LazyComponent1 />
           <LazyComponent2 />
         </Suspense>
