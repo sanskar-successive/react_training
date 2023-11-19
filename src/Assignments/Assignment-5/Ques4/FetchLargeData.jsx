@@ -1,4 +1,7 @@
-import { useEffect, useState } from "react";
+// 4.Fetch a large dataset from an API and implement pagination. 
+// Display a limited number of items per page and provide navigation controls to load more pages of data.
+
+import { useState } from "react";
 import Pagination from "./Pagination";
 
 const FetchLargeData = () => {

@@ -1,15 +1,27 @@
-const Button = ({ label, style, buttonClick }) => {
-  let buttonClass = "button";
-  if (style === "primary") {
-    buttonClass += " button-primary";
-  } else if (style === "secondary") {
-    buttonClass += " button-secondary";
-  } else if (style === "danger") {
-    buttonClass += " button-danger";
-  }
+// 12.Create a reusable Button component in React that accepts props for different styles 
+// (e.g., primary, secondary, danger) and click handlers. Demonstrate how to use this component in a sample application.
+
+import React from "react";
+const Button = ({ styles, onClick, children }) => {
+  const buttonStyle = {
+    primary: {
+      backgroundColor: "blue",
+      color: "white",
+    },
+    secondary: {
+      backgroundColor: "gray",
+      color: "black",
+    },
+    danger: {
+      backgroundColor: "red",
+      color: "white",
+    },
+  };
   return (
     <>
-      <button className="buttonClass" onClick={buttonClick}>{label}</button>
+      <button style={buttonStyle[styles]} onClick={onClick}>
+        {children}
+      </button>
     </>
   );
 };

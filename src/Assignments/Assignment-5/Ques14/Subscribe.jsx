@@ -6,7 +6,7 @@ const Subscribe = () => {
   const navigate = useNavigate();
   const [token, setToken] = useState(null);
   const handleSubscribe = () => {
-    if (token === AUTH_TOKEN) {
+    if (token === AUTH_TOKEN){
       sessionStorage.setItem("paidUser", 1);
       setToken("");
       navigate("/assignment-5/Ques-14/");

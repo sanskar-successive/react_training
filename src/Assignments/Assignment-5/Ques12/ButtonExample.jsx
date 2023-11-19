@@ -13,21 +13,15 @@ const ButtonExample = () => {
   return (
     <div>
       <h1>Reusable button example</h1>
-      <Button
-        label="Primary"
-        onClick={handlePrimaryClick}
-        style="primary"
-      />
-      <Button
-        label="Secondary"
-        onClick={handleSecondaryClick}
-        style="secondary"
-      />
-      <Button
-        label="Danger"
-        onClick={handleDangerClick}
-        style="danger"
-      />
+      <Button styles="primary" onClick={handlePrimaryClick}>
+        Primary
+      </Button>
+      <Button styles="secondary" onClick={handleSecondaryClick}>
+        Secondary
+      </Button>
+      <Button styles="danger" onClick={handleDangerClick}>
+        Danger
+      </Button>
     </div>
   );
 };

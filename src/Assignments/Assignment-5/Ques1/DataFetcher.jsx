@@ -1,3 +1,6 @@
+// 1.Create a React component that fetches data from a public API 
+// (e.g., JSONPlaceholder) and displays it on the page. Use the fetch function to make the request.
+
 import { useEffect, useState } from "react";
 
 const DataFetcher = () => {
@@ -6,7 +9,6 @@ const DataFetcher = () => {
   const handleDataFetch = async () => {
     const response = await fetch(apiURL);
     const apiData = await response.json();
-
     setData(apiData);
   };
   return (
