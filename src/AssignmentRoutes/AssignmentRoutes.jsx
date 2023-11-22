@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
+  AssignmentFive,
   AssignmentFour,
   AssignmentOne,
   AssignmentThree,
   AssignmentTwo,
 } from "../MainAssignments";
-import { HomeQuesFour, HomeQuesThree } from "../Assignments/Assignment-3";
-import { AboutQuesThree } from "../Assignments/Assignment-3/Ques3/Pages";
 import {
   AboutQuesFour,
   Dashboard,
+  HomeQuesFour,
   LoginPage,
   PageNotFoundQuesFour,
   ProductDetail,
@@ -25,6 +25,9 @@ import {
   HomeQuesNine,
   ProfileQuesNine,
 } from "../Assignments/Assignment-4/Ques9";
+import { AboutQuesThree, HomeQuesThree } from "../Assignments/Assignment-3/Ques3";
+import { PublicComponent } from "../Assignments/Assignment-5";
+import Subscribe from "../Assignments/Assignment-5/Ques14/Subscribe";
 
 const AssignmentRoutes = () => {
   return (
@@ -36,7 +39,7 @@ const AssignmentRoutes = () => {
             <Route path="/assignment-1" element={<AssignmentOne />} />
             <Route path="/assignment-2" element={<AssignmentTwo />} />
             <Route path="/assignment-3" element={<AssignmentThree />} />
-            <Route path="/assignment-3/Ques-3" element={<HomeQuesThree />} />
+            <Route path="/assignment-3/Ques-3/" element={<HomeQuesThree />} />
             <Route
               path="/assignment-3/Ques-3/about"
               element={<AboutQuesThree />}
@@ -82,6 +85,15 @@ const AssignmentRoutes = () => {
             <Route
               path="/assignment-4/Ques-9/profile"
               element={<ProfileQuesNine />}
+            />
+            <Route path="/assignment-5" element={<AssignmentFive />} />
+            <Route
+              path="/assignment-5/Ques-14/"
+              element={<PublicComponent />}
+            />
+            <Route
+              path="/assignment-5/Ques-14/subscribe"
+              element={<Subscribe />}
             />
           </Routes>
         </BrowserRouter>
