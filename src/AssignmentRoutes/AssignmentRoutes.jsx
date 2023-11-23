@@ -3,6 +3,7 @@ import {
   AssignmentFive,
   AssignmentFour,
   AssignmentOne,
+  AssignmentSix,
   AssignmentThree,
   AssignmentTwo,
 } from "../MainAssignments";
@@ -95,6 +96,7 @@ const AssignmentRoutes = () => {
               path="/assignment-5/Ques-14/subscribe"
               element={<Subscribe />}
             />
+            <Route path="/assignment-6/" element={<AssignmentSix/>} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>

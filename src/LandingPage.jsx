@@ -12,6 +12,8 @@ const LandingPage = ()=>{
             <Link to='/assignment-4' >Assignment-4</Link>   
             <br/>
             <Link to='/assignment-5' >Assignment-5</Link>   
+            <br/>
+            <Link to='/assignment-6' >Assignment-6</Link>   
         </>
     )
 }

@@ -20,7 +20,6 @@ const FetchLargeDataGraphQL =()=>
                 )
             })}
             {!loading && <Pagination rows={showData} rowsPerPage={3}/>}
-        
         </>
       )
 }
